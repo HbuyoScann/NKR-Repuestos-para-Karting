@@ -117,8 +117,8 @@ Modelo de negocio
 
 # Trigger
 ## Trigger 1
-    * Descripción: Actualizar stock al insertar una línea de orden
-    * Objetivo: Este trigger descuenta automáticamente del stock inicial cada vez que se agrega una línea de orden. 
+ * Descripción: Actualizar stock al insertar una línea de orden
+ * Objetivo: Este trigger descuenta automáticamente del stock inicial cada vez que se agrega una línea de orden. 
 ## Trigger 2
-    * Descripción: Cambiar estado de orden al registrar pago
-    * Objetivo: Este trigger actualiza el estado de la orden a “pagada” cuando se inserta un pago que cubre el total.
+ * Descripción: Cambiar estado de orden al registrar pago
+ * Objetivo: Este trigger actualiza el estado de la orden a “pagada” cuando se inserta un pago que cubre el total.

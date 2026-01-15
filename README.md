@@ -7,8 +7,8 @@ El proyecto busca modelar la operación de un comercio dedicado a la compra y ve
     • Permitir análisis de ventas por tipo de repuesto, cliente y temporada de carreras. 
 # Situación problemática
 Actualmente, muchos comercios pequeños de karting llevan su gestión en planillas dispersas o sistemas genéricos que no contemplan las particularidades del rubro (ej. compatibilidad de piezas con modelos de chasis, control de stock de neumáticos por medida). Esto genera errores de inventario y dificultades para responder rápido a clientes. La base de datos propuesta soluciona estas brechas con un esquema especializado.
-Modelo de negocio
-# La organización es un comercio minorista de repuestos de karting que:
+# Modelo de negocio
+## La organización es un comercio minorista de repuestos de karting que:
     • Compra piezas a proveedores nacionales e internacionales. 
     • Vende a clientes finales pilotos, equipos y talleres. 
     • Gestiona stock en depósitos. 

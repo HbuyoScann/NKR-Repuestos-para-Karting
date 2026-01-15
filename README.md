@@ -95,24 +95,30 @@ Modelo de negocio
   * Objetivo/Beneficio: Centralizar la creación de órdenes, asegurando que siempre se registren con estado inicial y valores consistentes.
   * Tablas involucradas: ordenes, clientes.
     
-# sp_agregar_linea_orden
+## sp_agregar_linea_orden
   * Descripción: Agrega una línea de producto a una orden y recalcula los totales.
   * Objetivo/Beneficio: Automatizar la actualización de totales al añadir productos, evitando cálculos manuales.
   * Tablas involucradas: lineas_orden, ordenes, productos.
 
-# sp_agregar_linea_orden
+## sp_agregar_linea_orden
   * Descripción: Agrega una línea de producto a una orden y recalcula los totales.
   * Objetivo/Beneficio: Automatizar la actualización de totales al añadir productos, evitando cálculos manuales.
   * Tablas involucradas: lineas_orden, ordenes, productos.
 
-# sp_emitir_factura
+## sp_emitir_factura
   * Descripción: Genera una factura para una orden ya pagada.
   * Objetivo: Automatizar la emisión de facturas con consistencia en montos y estado.
   * Tablas: facturas, ordenes.
 
-# sp_registrar_envio
+## sp_registrar_envio
   * Descripción: Crea un registro de envío para una orden.
   * Objetivo: Integrar la logística al flujo de órdenes con seguimiento desde despacho hasta entrega.
   * Tablas: envios, ordenes.
 
-
+# Trigger
+## Trigger 1
+    * Descripción: Actualizar stock al insertar una línea de orden
+    * Objetivo: Este trigger descuenta automáticamente del stock inicial cada vez que se agrega una línea de orden. 
+## Trigger 2
+    * Descripción: Cambiar estado de orden al registrar pago
+    * Objetivo: Este trigger actualiza el estado de la orden a “pagada” cuando se inserta un pago que cubre el total.
